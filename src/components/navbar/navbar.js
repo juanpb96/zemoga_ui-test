@@ -12,13 +12,13 @@ export const Navbar = () => {
                 </button>
                 <ul className="nav__links">
                     <li>
-                        <a href="#">Past Trials</a>
+                        <button>Past Trials</button>
                     </li>
                     <li>
-                        <a href="#">How It Works</a>
+                        <button>How It Works</button>
                     </li>
                     <li>
-                        <a href="#">Login / Sign Up</a>
+                        <button>Login / Sign Up</button>
                     </li>
                     <li>
                         <form>

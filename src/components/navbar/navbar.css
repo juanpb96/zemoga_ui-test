@@ -51,9 +51,14 @@
     text-align: center;
   }
   
-  .nav__links a {
+  .nav__links button {
     color: var(--color-white);
     text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    font-weight: inherit;
   }
   
   .nav__hamburger:focus + .nav__links,
