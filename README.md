@@ -56,6 +56,6 @@ If you feel that covering the basic acceptance criteria isn't enough to showcase
 Challenge complete?
 -------------------
 
-[ ] Send a link to your recruiter pointing to your repository (Github or Bitbucket). The **master** branch should contain the entire result, along with the instructions to run your code on the README.md file (if apples).
+- [ ] Send a link to your recruiter pointing to your repository (Github or Bitbucket). The **master** branch should contain the entire result, along with the instructions to run your code on the README.md file (if apples).
 
 Happy coding! 🙌

@@ -92,6 +92,7 @@
   .featured-card__buttons > .icon-button {
     width: 50%;
     height: 2.75rem;
+    cursor: pointer;
   }
   
   .featured-card__buttons > .icon-button > img {

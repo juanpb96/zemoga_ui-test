@@ -38,7 +38,7 @@ ul {
   list-style: none;
 }
 
-hr[role="separator"] {
+.separator {
   border: 0 none;
   border-bottom: 2px dotted var(--color-dark-gray);
   margin: 1.5rem 1rem;
@@ -157,7 +157,7 @@ main h2 {
   }
 
   .max-centered > *,
-  .max-centered > hr[role="separator"] {
+  .max-centered > .separator {
       margin-right: 0;
       margin-left: 0;
   }
@@ -192,7 +192,7 @@ main h2 {
       font-size: 2.5rem;
   }
 
-  hr[role="separator"] {
+  .separator {
       margin: 2rem 0;
   }
 }

@@ -8,7 +8,7 @@ export const BannerBottom = () => {
     return (
         <aside className="banner banner-bottom" role="doc-tip" aria-label="Submit a name">
             <img
-                srcset={`${bgPeople} 750w, ${bgPeople2x} 1440w`}
+                srcSet={`${bgPeople} 750w, ${bgPeople2x} 1440w`}
                 sizes="(min-width: 750px) 1440px, 100vw"
                 className="banner__background" src={bgPeople}
                 alt=""

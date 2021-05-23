@@ -6,13 +6,13 @@ import { Footer } from './components/footer/footer';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navbar />
       <Header />
       <div className="max-centered">
         <BannerTop />
         <BannerBottom />
-        <hr role="separator"/>
+        <hr className="separator"/>
         <Footer />
       </div>
     </div>

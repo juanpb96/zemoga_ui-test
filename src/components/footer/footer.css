@@ -10,12 +10,16 @@
     font-size: 1.25rem;
   }
   
-  .footer__links li a {
+  .footer__links li button {
     color: var(--color-dark-gray);
     text-decoration: none;
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
   }
   
-  .footer__links li a:hover {
+  .footer__links li button:hover {
     color: var(--color-darker-gray);
     text-decoration: underline;
   }
@@ -33,6 +37,13 @@
   
   .footer__social > ul > li {
     margin-right: 1rem;
+  }
+
+  .footer__social > ul > li > button {
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
   }
 
   @media all and (min-width: 768px) {
