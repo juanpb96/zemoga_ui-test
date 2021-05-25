@@ -1,6 +1,7 @@
 .card {
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
+    background-color: #BDC3C7;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -12,6 +13,7 @@
     height: 100%;
     position: absolute;
     object-fit: cover;
+    mix-blend-mode: multiply;
 }
 
 .card__content {
@@ -22,14 +24,18 @@
 .card__header {
     position: relative;
     display: flex;
+    width: 78%;
+    height: 3rem;
+    margin: 0 auto;
 }
 
 .card__status {
-    width: 2rem;
-    height: 2rem;
+    width: 2.7rem;
+    height: 2.7rem;
     background-color: rgba(var(--color-yellow-negative), .8);
     display: flex;
     justify-content: center;
+    position: absolute;
 }
 
 .card__status > .icon-button {
@@ -37,15 +43,78 @@
     height: auto;
 }
 
+.text-overflow {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .card__title {
+    width: 100%;
     color: var(--color-white);
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 400;
     margin: 0;
+    position: absolute;
+    bottom: 0;
 }
 
 .card__description {
+    width: 80%;
+    margin: 1rem auto;
     position: relative;
     color: var(--color-white);
 }
 
+.card__vote {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.card__last-updated {
+    color: var(--color-white);
+    font-weight: 400;
+}
+
+.card__buttons {
+    display: inherit;
+}
+
+.button-option {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.button-option {
+    border: none;
+    margin-right: 1rem;
+}
+
+.button-option[aria-label="thumbs up"] {
+    background-color: rgba(var(--color-green-positive), .8);
+}
+
+.button-option[aria-label="thumbs down"] {
+    background-color: rgba(var(--color-yellow-negative), .8);
+}
+
+.button-vote {
+    background-color: var(--color-dark-background);
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    font-weight: 400;
+    padding: 0 1.5rem;
+}
+
+.gauge-bar {
+    position: relative;
+}
