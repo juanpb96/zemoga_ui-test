@@ -13,35 +13,35 @@ export const Card = (props) => {
                 alt={ props.name }
             />
             <div className="card__content">
-                <div className="card__header">
-                    <div className="card__status">
-                        <img 
-                            className="icon-button"
-                            src={ thumbsUp || thumbsDown }
-                            alt=""
-                        />
-                    </div>
-                    <h3 className="card__title">{ props.name }</h3>
+                <div className="card__status">
+                    <img 
+                        className="icon-button"
+                        src={ thumbsUp || thumbsDown }
+                        alt=""
+                    />
                 </div>
-                <p className="card__description">{ props.description }</p>
+                <div className="card__header">
+                    <h3 className="card__title text-overflow">{ props.name }</h3>
+                </div>
+                <p className="card__description text-overflow">{ props.description }</p>
                 <div className="card__vote">
-                    <h4>{ moment(props.lastUpdated).fromNow() } in { props.category }</h4>
+                    <h4 className="card__last-updated">{ moment(props.lastUpdated).fromNow() } in { props.category }</h4>
                     <div className="card__buttons">
-                        <button>
+                        <button className="button-option" aria-label="thumbs up">
                             <img 
                                 className="icon-button"
                                 src={ thumbsUp }
                                 alt="Vote Positive"
                             />
                         </button>
-                        <button>
+                        <button className="button-option" aria-label="thumbs down">
                             <img 
                                 className="icon-button"
                                 src={ thumbsDown }
                                 alt="Vote Negative"
                             />
                         </button>
-                        <button>Vote Now</button>
+                        <button className="button-vote">Vote Now</button>
                     </div>
                 </div>
                 <div className="gauge-bar">
