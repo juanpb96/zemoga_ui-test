@@ -32,7 +32,7 @@
 .card__status {
     width: 2.7rem;
     height: 2.7rem;
-    background-color: rgba(var(--color-yellow-negative), .8);
+    background-color: rgba(var(--color-yellow-negative), 1);
     display: flex;
     justify-content: center;
     position: absolute;
@@ -54,7 +54,7 @@
 .card__title {
     width: 100%;
     color: var(--color-white);
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: 400;
     margin: 0;
     position: absolute;
@@ -63,9 +63,10 @@
 
 .card__description {
     width: 80%;
-    margin: 1rem auto;
+    margin: 1rem auto 0;
     position: relative;
     color: var(--color-white);
+    font-size: 1.2rem;
 }
 
 .card__vote {
@@ -85,36 +86,92 @@
 
 .card__buttons {
     display: inherit;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .button-option {
-    width: 3rem;
-    height: 3rem;
+    width: 2.6rem;
+    height: 2.6rem;
     display: flex;
     justify-content: center;
-}
-
-.button-option {
     border: none;
     margin-right: 1rem;
+    cursor: pointer;
 }
 
 .button-option[aria-label="thumbs up"] {
-    background-color: rgba(var(--color-green-positive), .8);
+    background-color: rgba(var(--color-green-positive), 1);
 }
 
 .button-option[aria-label="thumbs down"] {
-    background-color: rgba(var(--color-yellow-negative), .8);
+    background-color: rgba(var(--color-yellow-negative), 1);
 }
 
 .button-vote {
-    background-color: var(--color-dark-background);
+    height: 3rem;
+    background-color: var(--color-darker-background);
     border: 1px solid var(--color-white);
     color: var(--color-white);
+    font-size: 1.2rem;
     font-weight: 400;
-    padding: 0 1.5rem;
+    padding: 0 1.8rem;
+    cursor: pointer;
 }
 
 .gauge-bar {
-    position: relative;
+    width: 100%;
+    height: 3rem;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-white);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.gauge-bar__positive,
+.gauge-bar__negative {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.gauge-bar__positive {
+    width: 23.5%;
+    left: 0;
+    justify-content: flex-start;
+    background-color: rgba(var(--color-green-positive), .7);
+}
+
+.gauge-bar__positive-votes {
+    position: absolute;
+    left: 1rem;
+    display: flex;
+    z-index: 10;
+}
+
+.gauge-bar__positive-votes > img {
+    margin-right: .5rem;
+}
+
+.gauge-bar__negative {
+    width: 76.5%;
+    right: 0;
+    justify-content: flex-end;
+    background-color: rgba(var(--color-yellow-negative), .7);
+}
+
+.gauge-bar__negative-votes {
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    z-index: 10;
+}
+
+.gauge-bar__negative-votes > img {
+    margin-left: .5rem;
 }
