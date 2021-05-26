@@ -1,4 +1,5 @@
-import firebase from 'firebase/app';
+var firebase = require('firebase/app').default;
+require('firebase/database');
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -13,4 +14,13 @@ const firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-export default firebase;
+const db = firebase.database();
+
+const Firebase = {
+    updateData( id, obj ) {
+        // Update the entire object
+        db.ref('data/' + id).set(obj);
+    }
+}
+
+module.exports = Firebase;
